@@ -21,4 +21,4 @@ Usage
 
 lightSweep('#elementID','duration [s]');
 
-example: lightSweep('#banner',3s');
+example: lightSweep('#banner','3s');
