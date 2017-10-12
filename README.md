@@ -1,7 +1,7 @@
 lightSweep.js
 =========
 
-This is a jQuery function that generates 'light sweep' effect on a selected element.
+This is a jQuery function that generates animated 'light sweep' effect on a selected element.
 
 
 Documentation
