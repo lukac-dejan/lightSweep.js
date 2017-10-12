@@ -7,10 +7,12 @@ This is a jQuery function that generates 'light sweep' effect on a selected elem
 Documentation
 -------------
 
-Add the lightSweep.js to your document along with jQuery library:
+Add the jquery.lightSweep.js and lightSweep.css to your document along with jQuery library:
 
 `<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>`
 
 `<script type="text/javascript" src="_js/jquery.lightSweep.js"></script>`
+
+`<link href="_css/jquery.lightSweep.css" rel="stylesheet" type="text/css">`
 
 That's it!
