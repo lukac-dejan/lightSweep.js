@@ -15,4 +15,9 @@ Add the jquery.lightSweep.js and lightSweep.css to your document along with jQue
 
 `<link href="_css/jquery.lightSweep.css" rel="stylesheet" type="text/css">`
 
-That's it!
+
+Usage
+-----
+
+lightSweep('#elementID','duration [s]');
+example: lightSweep('#banner',3s');
