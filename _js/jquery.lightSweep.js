@@ -8,9 +8,10 @@ function lightSweep(id,time) {
 	var height = $(ID).css('height');
 	var width = $(ID).css('width');
 	var background = $(ID).css('background');
-	var offset = $(ID).offset();
-	var top = offset.top + "px";
-	var left = offset.left + "px";
+	var position = $(ID).position();
+	var top = position.top + "px";
+	var left = position.left + "px";
+
 	$(ID).clone().insertAfter(ID).attr('id',newID).addClass('lightSweep lightSweepStart');
 	$('#' + newID).css('height', height);
 	$('#' + newID).css('width', width);
@@ -18,8 +19,11 @@ function lightSweep(id,time) {
 	$('#' + newID).css('left', left);
 	$('#' + newID).css('background', background);
 	$('#' + newID).css( "-webkit-transition-duration", time );
+	$('#' + newID).css( "-moz-transition-duration", time );
+	$('#' + newID).css( "-o-transition-duration", time );
+	$('#' + newID).css( "transition-duration", time );
 	setTimeout( function() { $('#' + newID).addClass('lightSweepEnd'); },20);
-	$('#' + newID).bind("webkitTransitionEnd", function() { $('#' + newID).remove(); });
+	$('#' + newID).bind("webkitTransitionEnd otransitionend oTransitionEnd transitionend", function() { $('#' + newID).remove(); });
 }
 
 
