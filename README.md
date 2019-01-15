@@ -22,3 +22,7 @@ Usage
 lightSweep('#elementID','duration [s]');
 
 example: lightSweep('#banner','3s');
+
+Demo on CodePen
+---------------
+https://codepen.io/DeYo71/pen/dVKaXe
