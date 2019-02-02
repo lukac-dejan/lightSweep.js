@@ -23,7 +23,7 @@ function lightSweep(id,time) {
 	$('#' + newID).css( "-o-transition-duration", time );
 	$('#' + newID).css( "transition-duration", time );
 	setTimeout( function() { $('#' + newID).addClass('lightSweepEnd'); },20);
-	$('#' + newID).bind("webkitTransitionEnd otransitionend oTransitionEnd transitionend", function() { $('#' + newID).remove(); });
+	$('#' + newID).on("webkitTransitionEnd otransitionend oTransitionEnd transitionend", function() { $('#' + newID).remove(); });
 }
 
 
